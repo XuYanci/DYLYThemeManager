@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface UIImageView_DYLYTheme : NSObject
+@interface UIImageView (DYLYTheme)
 
 @end

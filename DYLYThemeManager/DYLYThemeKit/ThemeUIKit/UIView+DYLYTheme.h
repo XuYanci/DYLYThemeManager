@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface UIView_DYLYTheme : NSObject
+#import <UIKit/UIKit.h>
+@interface UIView (DYLYTheme)
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface UIButton_DYLYTheme : NSObject
+@interface UIButton (DYLYTheme)
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface UINavigationBar_DYLYTheme : NSObject
+@interface UINavigationBar (DYLYTheme)
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface UILabel_DYLYTheme : NSObject
+#import <UIKit/UIKit.h>
+@interface UILabel (DYLYTheme)
 
 @end

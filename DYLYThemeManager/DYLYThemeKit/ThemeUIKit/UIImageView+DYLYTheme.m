@@ -8,6 +8,6 @@
 
 #import "UIImageView+DYLYTheme.h"
 
-@implementation UIImageView_DYLYTheme
+@implementation UIImageView (DYLYTheme)
 
 @end

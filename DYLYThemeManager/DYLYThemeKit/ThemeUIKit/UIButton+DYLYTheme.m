@@ -8,6 +8,6 @@
 
 #import "UIButton+DYLYTheme.h"
 
-@implementation UIButton_DYLYTheme
+@implementation UIButton (DYLYTheme)
 
 @end

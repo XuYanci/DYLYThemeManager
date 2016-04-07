@@ -8,6 +8,6 @@
 
 #import "UIView+DYLYTheme.h"
 
-@implementation UIView_DYLYTheme
+@implementation UIView (DYLYTheme)
 
 @end

@@ -8,6 +8,6 @@
 
 #import "UINavigationBar+DYLYTheme.h"
 
-@implementation UINavigationBar_DYLYTheme
+@implementation UINavigationBar (DYLYTheme)
 
 @end

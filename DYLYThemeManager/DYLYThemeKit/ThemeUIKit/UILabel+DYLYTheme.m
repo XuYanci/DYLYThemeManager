@@ -8,6 +8,6 @@
 
 #import "UILabel+DYLYTheme.h"
 
-@implementation UILabel_DYLYTheme
+@implementation UILabel (DYLYTheme)
 
 @end
