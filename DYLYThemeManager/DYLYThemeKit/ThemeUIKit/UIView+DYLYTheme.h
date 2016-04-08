@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "NSObject+DYLYTheme.h"
+
 @interface UIView (DYLYTheme)
+@property (nonatomic, copy, setter = dyly_setBackgroundColorPicker:) DYLYColorPicker dyly_backgroundColorPicker;
+@property (nonatomic, copy, setter = dyly_setTintColorPicker:) DYLYColorPicker dyly_tintColorPicker;
 
 @end

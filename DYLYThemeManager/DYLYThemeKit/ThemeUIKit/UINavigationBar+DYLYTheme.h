@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "NSObject+DYLYTheme.h"
 
 @interface UINavigationBar (DYLYTheme)
-
+@property (nonatomic,copy,setter= dyly_setBarTintColorPicker:) DYLYColorPicker dyly_barTintColorPicker;
+@property (nonatomic,copy,setter= dyly_setTintColorPicker:) DYLYColorPicker dyly_tintColorPicker;
 @end

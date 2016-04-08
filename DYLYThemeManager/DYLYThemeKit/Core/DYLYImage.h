@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef NSUInteger DYLYThemeInt;
-typedef UIImage *(^DYLYImagePicker)(DYLYThemeInt theme);
+typedef NSString* _DYLYTheme;
+typedef UIImage *(^DYLYImagePicker)(_DYLYTheme theme);
 @interface DYLYImage : NSObject
 @end

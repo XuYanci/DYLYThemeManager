@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef NSUInteger DYLYThemeInt;
-typedef UIColor *(^DYLYColorPicker)(DYLYThemeInt version);
+typedef NSString* _DYLYTheme;
+typedef UIColor *(^DYLYColorPicker)(_DYLYTheme version);
 @interface DYLYColor : NSObject
 
 @end

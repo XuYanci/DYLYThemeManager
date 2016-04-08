@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "DYLYColor.h"
+#import "DYLYImage.h"
+
 
 /*!
  @class DYLYThemeManager
@@ -26,13 +29,12 @@ extern NSString* const DYLYThemeCurrentThemeKey;            /*! 主题UserDefaul
 extern CGFloat const DYLYThemeAnimationDuration;            /*! 主题切换间隔时间 */
 
 /*! 主题样式 */
-typedef NS_ENUM(NSUInteger,DYLYTheme) {
-    DYLYTheme_Day = 0,          /*! 白天模式 */
-    DYLYTheme_Night,            /*! 夜晚模式 */
-    DYLYTheme_Others,           /*! 其他模式 */
-};
+extern NSString *const DYLYThemeDay;
+extern NSString *const DYLYThemeNight;
+extern NSString *const DYLYThemeOthers;
+
 
 @interface DYLYThemeManager : NSObject
-@property (nonatomic,assign) DYLYTheme currentTheme; /*! 设置当前样式 */
+@property (nonatomic,strong) NSString* currentTheme; /*! 设置当前样式 */
 + (DYLYThemeManager *)shareThemeManager;
 @end

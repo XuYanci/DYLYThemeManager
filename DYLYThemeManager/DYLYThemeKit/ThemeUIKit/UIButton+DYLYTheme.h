@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "NSObject+DYLYTheme.h"
 
 @interface UIButton (DYLYTheme)
-
+- (void)dyly_setTitleColorPicker:(DYLYColorPicker)picker forState:(UIControlState)state;
+- (void)dyly_setBackgroundImage:(DYLYImagePicker)picker forState:(UIControlState)state;
+- (void)dyly_setImage:(DYLYImagePicker)picker forState:(UIControlState)state;
 @end

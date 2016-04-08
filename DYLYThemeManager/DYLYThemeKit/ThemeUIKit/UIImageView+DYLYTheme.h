@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "NSObject+DYLYTheme.h"
 
 @interface UIImageView (DYLYTheme)
-
+- (instancetype)dyly_initWithImagePicker:(DYLYImagePicker)picker;
+@property (nonatomic, copy, setter = dyly_setImagePicker:) DYLYImagePicker dyly_imagePicker;
 @end

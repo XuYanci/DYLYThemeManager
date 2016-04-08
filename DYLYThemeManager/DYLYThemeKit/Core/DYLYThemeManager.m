@@ -12,6 +12,10 @@ NSString* const DYLYThemeChangingNotification = @"DYLYThemeChangingNotification"
 NSString* const DYLYThemeCurrentThemeKey = @"com.dyly.theme.currenttheme";
 CGFloat const DYLYThemeAnimationDuration = 0.3;
 
+NSString *const DYLYThemeDay = @"dyly.theme.day";
+NSString *const DYLYThemeNight = @"dyly.theme.night";
+NSString *const DYLYThemeOthers = @"dyly.theme.others";
+
 
 @implementation DYLYThemeManager
 
@@ -19,27 +23,26 @@ CGFloat const DYLYThemeAnimationDuration = 0.3;
     static dispatch_once_t once;
     static DYLYThemeManager *instance;
     dispatch_once(&once, ^{
-        instance = [self new];
-        NSNumber *currentTheme = [[NSUserDefaults standardUserDefaults]objectForKey:DYLYThemeCurrentThemeKey];
+        instance = [[DYLYThemeManager alloc]init];
+        NSString *currentTheme = [[NSUserDefaults standardUserDefaults]objectForKey:DYLYThemeCurrentThemeKey];
         /*! Default theme is DYLYTheme_Day */
         if (currentTheme == nil) {
-            currentTheme = [NSNumber numberWithUnsignedInteger:DYLYTheme_Day];
+            currentTheme = DYLYThemeDay;
         }
-        
-        instance.currentTheme = currentTheme.integerValue;
+        instance.currentTheme = currentTheme;
     
     });
-    return self;
+    return instance;
 }
 
-- (void)setCurrentTheme:(DYLYTheme)currentTheme {
+- (void)setCurrentTheme:(NSString *)currentTheme {
     if (self.currentTheme == currentTheme) {
         return;
     }
+    _currentTheme = currentTheme;
     
     /*! Save theme */
-    [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithUnsignedInteger:self.currentTheme]
-                                             forKey:DYLYThemeCurrentThemeKey];
+    [[NSUserDefaults standardUserDefaults]setObject:currentTheme forKey:DYLYThemeCurrentThemeKey];
     [[NSUserDefaults standardUserDefaults]synchronize];
 
     /*! Dispatch Message & Notify Changing */

@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+@property (nonatomic,weak)IBOutlet UILabel *changeLabel;
+@property (nonatomic,weak)IBOutlet UIButton *themeChangeBtn;
 
 @end
 

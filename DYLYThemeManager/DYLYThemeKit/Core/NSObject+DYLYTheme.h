@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DYLYThemeManager.h"
 
 @interface NSObject (DYLYTheme)
-
+- (DYLYThemeManager *)dyly_manager;
 @end

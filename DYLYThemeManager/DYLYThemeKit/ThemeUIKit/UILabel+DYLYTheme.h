@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface UILabel (DYLYTheme)
+#import "NSObject+DYLYTheme.h"
 
+@interface UILabel (DYLYTheme)
+@property (nonatomic, copy, setter = dyly_setTextColorPicker:) DYLYColorPicker dyly_textColorPicker;
 @end

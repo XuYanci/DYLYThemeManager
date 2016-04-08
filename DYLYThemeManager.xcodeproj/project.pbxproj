@@ -15,6 +15,8 @@
 		AD65424B1CB50FEF00FEF869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6542491CB50FEF00FEF869 /* LaunchScreen.storyboard */; };
 		AD6542561CB50FEF00FEF869 /* DYLYThemeManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6542551CB50FEF00FEF869 /* DYLYThemeManagerTests.m */; };
 		AD6542611CB50FEF00FEF869 /* DYLYThemeManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6542601CB50FEF00FEF869 /* DYLYThemeManagerUITests.m */; };
+		ADB0EF6A1CB73C61008FF447 /* DYLYTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADB0EF691CB73C61008FF447 /* DYLYTheme.plist */; };
+		ADB0EF6E1CB73C91008FF447 /* DYLYColorTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB0EF6D1CB73C91008FF447 /* DYLYColorTable.m */; };
 		ADDEF0901CB606D20076C48E /* DYLYThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDEF08F1CB606D20076C48E /* DYLYThemeManager.m */; };
 		ADDEF0931CB6101A0076C48E /* NSObject+DYLYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDEF0921CB6101A0076C48E /* NSObject+DYLYTheme.m */; };
 		ADDEF0961CB610BE0076C48E /* DYLYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDEF0951CB610BE0076C48E /* DYLYColor.m */; };
@@ -27,8 +29,6 @@
 		ADDEF0C61CB637D40076C48E /* UILabel+DYLYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDEF0BF1CB637D40076C48E /* UILabel+DYLYTheme.m */; };
 		ADDEF0C71CB637D40076C48E /* UINavigationBar+DYLYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDEF0C11CB637D40076C48E /* UINavigationBar+DYLYTheme.m */; };
 		ADDEF0C81CB637D40076C48E /* UIView+DYLYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDEF0C31CB637D40076C48E /* UIView+DYLYTheme.m */; };
-		ADDEF0CC1CB638370076C48E /* ThemeDay.json in Resources */ = {isa = PBXBuildFile; fileRef = ADDEF0CA1CB638370076C48E /* ThemeDay.json */; };
-		ADDEF0CD1CB638370076C48E /* ThemeNight.json in Resources */ = {isa = PBXBuildFile; fileRef = ADDEF0CB1CB638370076C48E /* ThemeNight.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +65,10 @@
 		AD65425C1CB50FEF00FEF869 /* DYLYThemeManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYLYThemeManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6542601CB50FEF00FEF869 /* DYLYThemeManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYLYThemeManagerUITests.m; sourceTree = "<group>"; };
 		AD6542621CB50FEF00FEF869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADB0EF691CB73C61008FF447 /* DYLYTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DYLYTheme.plist; sourceTree = "<group>"; };
+		ADB0EF6C1CB73C91008FF447 /* DYLYColorTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYLYColorTable.h; path = ColorTable/DYLYColorTable.h; sourceTree = "<group>"; };
+		ADB0EF6D1CB73C91008FF447 /* DYLYColorTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYLYColorTable.m; path = ColorTable/DYLYColorTable.m; sourceTree = "<group>"; };
+		ADB0EF701CB74FE7008FF447 /* DYLYThemeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYLYThemeKit.h; sourceTree = "<group>"; };
 		ADDEF08E1CB606D20076C48E /* DYLYThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLYThemeManager.h; sourceTree = "<group>"; };
 		ADDEF08F1CB606D20076C48E /* DYLYThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYLYThemeManager.m; sourceTree = "<group>"; };
 		ADDEF0911CB6101A0076C48E /* NSObject+DYLYTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DYLYTheme.h"; sourceTree = "<group>"; };
@@ -89,8 +93,6 @@
 		ADDEF0C11CB637D40076C48E /* UINavigationBar+DYLYTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+DYLYTheme.m"; sourceTree = "<group>"; };
 		ADDEF0C21CB637D40076C48E /* UIView+DYLYTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DYLYTheme.h"; sourceTree = "<group>"; };
 		ADDEF0C31CB637D40076C48E /* UIView+DYLYTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DYLYTheme.m"; sourceTree = "<group>"; };
-		ADDEF0CA1CB638370076C48E /* ThemeDay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ThemeDay.json; sourceTree = "<group>"; };
-		ADDEF0CB1CB638370076C48E /* ThemeNight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ThemeNight.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,12 +183,23 @@
 			path = DYLYThemeManagerUITests;
 			sourceTree = "<group>";
 		};
+		ADB0EF6B1CB73C68008FF447 /* ColorTable */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0EF6C1CB73C91008FF447 /* DYLYColorTable.h */,
+				ADB0EF6D1CB73C91008FF447 /* DYLYColorTable.m */,
+			);
+			name = ColorTable;
+			sourceTree = "<group>";
+		};
 		ADDEF08A1CB6069B0076C48E /* DYLYThemeKit */ = {
 			isa = PBXGroup;
 			children = (
+				ADB0EF6B1CB73C68008FF447 /* ColorTable */,
 				ADDEF0C91CB638370076C48E /* ThemeData */,
 				ADDEF0B91CB637D40076C48E /* ThemeUIKit */,
 				ADDEF08B1CB6069B0076C48E /* Core */,
+				ADB0EF701CB74FE7008FF447 /* DYLYThemeKit.h */,
 			);
 			path = DYLYThemeKit;
 			sourceTree = "<group>";
@@ -240,8 +253,7 @@
 		ADDEF0C91CB638370076C48E /* ThemeData */ = {
 			isa = PBXGroup;
 			children = (
-				ADDEF0CA1CB638370076C48E /* ThemeDay.json */,
-				ADDEF0CB1CB638370076C48E /* ThemeNight.json */,
+				ADB0EF691CB73C61008FF447 /* DYLYTheme.plist */,
 			);
 			name = ThemeData;
 			path = DYLYThemeManager/DYLYThemeKit/ThemeData;
@@ -352,8 +364,7 @@
 			files = (
 				AD65424B1CB50FEF00FEF869 /* LaunchScreen.storyboard in Resources */,
 				AD6542481CB50FEF00FEF869 /* Assets.xcassets in Resources */,
-				ADDEF0CC1CB638370076C48E /* ThemeDay.json in Resources */,
-				ADDEF0CD1CB638370076C48E /* ThemeNight.json in Resources */,
+				ADB0EF6A1CB73C61008FF447 /* DYLYTheme.plist in Resources */,
 				AD6542461CB50FEF00FEF869 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +394,7 @@
 				AD6542431CB50FEF00FEF869 /* ViewController.m in Sources */,
 				ADDEF0C41CB637D40076C48E /* UIButton+DYLYTheme.m in Sources */,
 				ADDEF0961CB610BE0076C48E /* DYLYColor.m in Sources */,
+				ADB0EF6E1CB73C91008FF447 /* DYLYColorTable.m in Sources */,
 				ADDEF0A61CB62B000076C48E /* NSObject+DeallocBlock.m in Sources */,
 				ADDEF0901CB606D20076C48E /* DYLYThemeManager.m in Sources */,
 				ADDEF0931CB6101A0076C48E /* NSObject+DYLYTheme.m in Sources */,
