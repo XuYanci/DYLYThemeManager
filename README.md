@@ -1,5 +1,8 @@
 # DYLYThemeManager
-APP主题切换,可配置。
+ 
+ 主题管理器，配置App颜色字体等，方便切换主题。
+
+# Usage
 
 使用iOS Plist文件进行配置, 例如:
 
